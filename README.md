@@ -1,0 +1,5 @@
+# SCALABLE MODEL EDITING VIA CUSTOMIZED EXPERT NETWORKS
+
+The offical Pytorch implementation of SCALABLE MODEL EDITING VIA CUSTOMIZED EXPERT NETWORKS
+
+Our code will be updated soon!
