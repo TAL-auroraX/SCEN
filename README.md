@@ -1,6 +1,8 @@
 # Scalable Model Editing via Customized Expert Networks
 The offical Pytorch implementation of paper [``Scalable Model Editing via Customized Expert Networks``](http://arxiv.org/abs/2404.02699) 
 
+This work has been accepted by COLM2024!🥳
+
 ## Model Architecture
 
 ![](img/flowchart.png)
