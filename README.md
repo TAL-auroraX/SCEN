@@ -10,11 +10,17 @@ This work has been accepted by COLM2024!🥳
 SCEN Overall Architecture. The left half of the figure represents the editing stages. Stagel is the process for training the experts and Stage2 is the process corresponding to training the indexing neurons. The right half is the inference stage, where the corresponding experts are activated by the indexing neurons to complete the subsequent inference.
 
 ## Requirements
-
+see requirements.txt
 
 ## Quick Start
 
 ### ZsRE
+#### Step 0. Train experts
+Download model🤗
+https://huggingface.co/AuroraX/SCEN_ZsRE_llama2_7b
+
+Modify the "zsRE_edit_model" field in config.yml
+
 #### Step 1. Train experts
     python main_experts.py
 
