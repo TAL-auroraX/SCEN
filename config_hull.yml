@@ -1,0 +1,27 @@
+lab_tag : Hallucination-Llama2-7b-200 # keep it unique
+seq_length: 200 # 200 or 1000
+gpus : 5 # Index of available GPUs
+lr : 0.0001 # learning rate
+experts_step : 10 # Iterative steps for training experts
+neruals_step : 30 # Iterative steps for traininging index neurons
+theta : 0.6 # Thresholds in the inference phase
+
+mid_hidden : 11008 # llama2-7b:11008  llama2-13b:13824
+
+hull_edit_data : ./Data/Edit_hull.json
+hull_wikibio_A : ./Data/hall_accurates.json
+hull_open_web_text : ./Data/hall_open_webtext.json
+hull_edit_model : ./Model/hull_llama2_7b_base/
+
+
+expert_save_path : ./experts/
+neruals_save_path : ./indexing_neruals/
+merge_neruals : ./nerual_merge/
+report_res : ./res/
+
+res : ./res/ # Experiment result address
+
+# Layer to be edited
+modify_layer_names : [
+    "model.layers.20.mlp.down_proj",
+]
